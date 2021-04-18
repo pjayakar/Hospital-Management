@@ -11,7 +11,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active pl-3">
-            <a class="nav-link" href="index.php"><b>Home</b> <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="doc_display.php"><b>Patient Records</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active pl-3">
+            <a class="nav-link" href="calender.php"><b>Schedule</b> <span class="sr-only"></span></a>
           </li>
         </ul>
         <ul class='navbar-nav ml-auto'>

@@ -23,7 +23,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
         if(($user['username'] == $username) &&
             ($user['password'] == $password)) {
               $_SESSION["username"] = $user["username"];
-              header("Location: index.php");
+              $_SESSION["id"] = $user["doctor_id"];
+              header("Location: doc_display.php");
         }
     }
         echo "<script language='javascript'>";
