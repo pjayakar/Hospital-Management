@@ -7,26 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="log_in.css">
-    <title>Patient Login Page</title>
+    <title>Willow Green</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-
         <?php include "navbar/navbarCSS.php"; ?>
-
     </style>
-    <title>Cedar Hospital</title>
+    <title>Willow Green</title>
       </head>
       <body>
       <?php include "navbar/navbar.php"; ?>
-	<form action="validate.php" method="post">
+<div class="message"></div>
+	<form action="patient_validation.php" method="post">
         <div class="login-box">
             <h1>PATIENT LOGIN</h1>
-
             <div class="textbox">
                 <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" placeholder="Admin name"
-                         name="adminname" value="">
+                <input type="text" placeholder="Email"
+                         name="email" value="">
             </div>
 
             <div class="textbox">
@@ -37,9 +35,11 @@
 
             <input class="button" type="submit"
                      name="login" value="Sign In">
+            <div>
+              <p>Not registered?<a href="patient_access.php"> Register Now</a></p>
+            </div>
         </div>
     </form>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

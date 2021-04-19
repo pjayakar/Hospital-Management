@@ -17,8 +17,11 @@
     </style>
       </head>
       <body>
-      <?php include "navbar/doc_nav.php"; ?>
+      <?php include "navbar/pat_nav.php"; ?>
     <br>
+      <br>
+        <br>
+          <br>
     <h2>Patient Primary Record</h2>
           <?php
           $servername = "localhost";
@@ -26,8 +29,8 @@
           $password = "";
           $dbname = "hospital";
           $conn = new mysqli($servername, $username, $password, $dbname);
-          $a = $_SESSION["id"];
-          $sql = "SELECT * FROM patients_record WHERE doctor_id = '$a'";
+          $a = $_SESSION["patient_id"];
+          $sql = "SELECT * FROM patients_record WHERE patients_id = '$a'";
           $result = $conn->query($sql);
 
           if ($result->num_rows > 0){
@@ -36,6 +39,7 @@
             <table class='fl-table'>
             <tr>
             <th>Patient ID</th>
+            <th>Admission data</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Age</th>
@@ -47,6 +51,9 @@
                   <tr>
                   <td>
                   " .$row["patients_id"] . "
+                  </td>
+                  <td>
+                  " .$row["admit_date"] . "
                   </td>
                   <td>
                   " . $row["patients_firstname"] . "
@@ -79,8 +86,8 @@
                 $password = "";
                 $dbname = "hospital";
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $a = $_SESSION["id"];
-                $sql = "SELECT * FROM patients_record WHERE doctor_id = '$a'";
+                $a = $_SESSION["patient_id"];
+                $sql = "SELECT * FROM patients_record WHERE patients_id = '$a'";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0){
@@ -115,6 +122,7 @@
                 }
                 $conn->close();
                 ?>
+                
 
 
 
