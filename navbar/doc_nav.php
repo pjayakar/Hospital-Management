@@ -34,9 +34,6 @@
                 </a>
                 <div class='dropdown-menu' aria-labelled by='navbarDropdown'>
                   <a class='dropdown-item' href='doclog.php'>Doctor Login</a>
-                  <a class='dropdown-item' href='nurlog.php'>Nurse Login</a>
-                  <div class='dropdown-divider'></div>
-                  <a class='dropdown-item' href='adminlog.php'>Administration Login</a>
                   <div class='dropdown-divider'></div>
                   <a class='dropdown-item' href='patlog.php'>Patient Login</a>
                 </div>
@@ -44,7 +41,6 @@
           </ul>";
         }
           ?>
-
       </div>
     </nav>
     </header>
