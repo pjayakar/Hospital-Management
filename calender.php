@@ -17,7 +17,6 @@
   <?php include "navbar/doc_nav.php"; ?>
 <br>
 <div class="container theme-showcase">
-  <h1>Calendar</h1>
 <div id="holder" class="row" ></div>
 </div>
 
