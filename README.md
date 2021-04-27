@@ -5,3 +5,4 @@
 ## Design and Implementation of a Hospital Database Management System (HDMS) for Medical Doctors
 Hospital Management System is created used XAMPP Server
 ## Installation
+Use the website [Apache Friends](https://www.apachefriends.org/download.html) to download XAMPP
